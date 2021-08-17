@@ -566,7 +566,7 @@ gamePiece.innerHTML = ("Chess pieces image Source: OpenClipart-Vectors from Pixa
 
 
 }
- //Add white pieces place holders
+ //Add white pieces place holders.
 
  //let pawnWa = document.createElement("div");
  //pawnWa.setAttribute("id", "pawnWa");
