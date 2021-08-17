@@ -1,0 +1,573 @@
+#masterdiv {
+    background-color: gray;
+    height: 100%;
+
+}
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(9, 65px);
+    grid-template-rows: repeat(8, 65px) ;
+    justify-content: center;
+  
+}
+#gameboard * {
+    background-color: blanchedalmond;
+    border: 1px solid green;
+}
+
+#toprow {
+    display: grid;
+    grid-template-columns: repeat(9, 65px);
+    grid-template-rows: repeat(1, 65px) ;
+    justify-content: center;
+    grid-auto-flow: column;
+}
+
+#toprow * {
+    background-color: blanchedalmond;
+    border: 1px solid green;
+}
+
+
+#gameboard #a1 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #b1 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #c1 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #d1 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #e1 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #f1 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #g1 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #h1 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+
+
+#gameboard #a2{
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #b2{
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #c2{
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #d2{
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #e2{
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #f2{
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #g2 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #h2 {
+    background-color: green;
+border: 1px solid green;
+}
+
+
+#gameboard #a3 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #b3 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #c3 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #d3 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #e3 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #f3 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #g3 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #h3 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+
+
+#gameboard #a4 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #b4 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #c4 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #d4 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #e4 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #f4 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #g4  {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #h4  {
+    background-color: green;
+border: 1px solid green;
+}
+
+
+#gameboard #a5 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #b5 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #c5 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #d5 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #e5 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #f5 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #g5 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #h5 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+
+
+#gameboard #a6 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #b6 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #c6 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #d6 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #e6 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #f6 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #g6  {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #h6  {
+    background-color: green;
+border: 1px solid green;
+}
+
+
+#gameboard #a7 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #b7 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #c7 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #d7 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #e7 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #f7 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #g7 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #h7 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+
+
+#gameboard #a8 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #b8 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #c8 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #d8 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #e8 {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #f8 {
+    background-color: green;
+border: 1px solid green;
+}
+#gameboard #g8  {
+    background-color: blanchedalmond;
+border: 1px solid green;
+}
+#gameboard #h8  {
+    background-color: green;
+border: 1px solid green;
+}
+
+#blkPawn7Aimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkPawn7Bimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkPawn7Cimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkPawn7Dimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkPawn7Eimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkPawn7Fimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkPawn7Gimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#blkPawn7Himg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-color: inherit;
+}
+
+
+#whtPawn2Aimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtPawn2Bimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtPawn2Cimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtPawn2Dimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtPawn2Eimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtPawn2Fimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtPawn2Gimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#whtPawn2Himg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-color: inherit;
+}
+
+
+#blkrook8Aimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkknight8Bimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkbishop8Cimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkqueen8Dimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkking8Eimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkbishop8Fimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkknight8Gimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#blkrook8Himg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+
+
+#whtrook1Aimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtknight1Bimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtbishop1Cimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtqueen1Dimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtking1Eimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtbishop1Fimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtknight1Gimg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+#whtrook1Himg {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    display: grid;
+    padding-left: 10px;
+    padding-top: 10px;;
+}
+
+
+
+
+
+
+
