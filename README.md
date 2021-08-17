@@ -1,3 +1,23 @@
+Chess
+
+This program was created to demonstrate a level of coding proficency as related to term one of Code Immersives.  The student was tasked with choosing a project that 
+would provide at least a weeks worth of coding, troubleshooting, and research at respective coding level.  A number of specified/partially-specified requirement were also included: "Your app has at least three distinct "features"; Your project has at least ten commits in git; Your app is mobile responsive; Your project contains a `README.md` file that explains what your project is and how to use it; Your project is hosted on GitHub pages; Your code is clean; Proper indentation; No unnecessary repetition; Variables as camelCase." (Final Project)
+
+This game allows users to play a 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Final Project
 
 In this project, you'll build a web application that does anything you want! 
