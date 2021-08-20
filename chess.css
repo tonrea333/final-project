@@ -1,0 +1,23 @@
+#masterbody {
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(8, 70px) ;
+    justify-content: center;
+    background-color: rgb(194, 107, 78)
+}
+.piece {
+background-image: url("chess-151550_1280 (1).png");
+background-size: cover;
+position: relative;
+height: 40px;
+width: 40px;
+}
+.nopiece {
+    background-color: green;
+   display: grid;
+   justify-content: center;
+  padding-top: 10px;
+}
+.nopiece2 {
+    background-color: white;
+}
