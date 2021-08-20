@@ -582,22 +582,25 @@ function startGame() {
 
     //=========================================================
     //=========================================================
-
-    //pieces queried for movement/ black pawns
-
-    const BP7A = document.querySelector("#blkPawn7Aimg");
-    BP7A.addEventListener("dragstart", dragStart);
-    BP7A.addEventListener("dragend", dragEnd);
-
     const BP7B = document.querySelector("#blkPawn7Bimg");
     BP7B.addEventListener("dragstart", dragStart2);
     BP7B.addEventListener("dragend", dragEnd2);
-let count = 0
+    //pieces queried for movement/ black pawns
 
-for(let i = 0; i < 1; i++){
-count = count + 1
-console.log(count)
- 
+    let B7 = document.querySelector("#blkPawn7Aimg");
+    B7.addEventListener("click", onClick);
+    //function onClick() {
+
+    
+    
+    
+    let BP7A = document.querySelector("#blkPawn7Aimg");
+    BP7A.addEventListener("dragstart", dragStart);
+    BP7A.addEventListener("dragend", dragEnd);
+
+    
+
+
     //dragevent componenets for movement across each of 64 gameboard squares
     blackAlphaRow8a.addEventListener("dragover", dragOver);
     blackAlphaRow8a.addEventListener("dragenter", dragEnter);
@@ -925,7 +928,7 @@ console.log(count)
     blackAlphaRow1h.addEventListener("dragenter", dragEnter);
     blackAlphaRow1h.addEventListener("dragleave", dragLeave);
     blackAlphaRow1h.addEventListener("drop", dragDrop);
-}
+
     //functions start and end of drag event
     function dragStart() {
         console.log("start");
@@ -933,6 +936,26 @@ console.log(count)
     function dragEnd() {
         console.log("end");
     }
+
+    function dragOver(event) {
+        event.preventDefault();
+        console.log("over")
+    }
+    function dragEnter(event) {
+        event.preventDefault();
+        console.log("enter")
+    }
+    function dragLeave() {
+        console.log("Leave")
+    }
+    function dragDrop() {
+        // this.className(blackAlphaRow7a)
+
+        this.append(BP7A)
+
+        console.log("Drop")
+    }
+//}
 
     blackAlphaRow6b.addEventListener("dragover", dragOver2);
     blackAlphaRow6b.addEventListener("dragenter", dragEnter2);
@@ -956,24 +979,7 @@ console.log(count)
         console.log("end");
     }
 
-    function dragOver(event) {
-        event.preventDefault();
-        console.log("over")
-    }
-    function dragEnter(event) {
-        event.preventDefault();
-        console.log("enter")
-    }
-    function dragLeave() {
-        console.log("Leave")
-    }
-    function dragDrop() {
-        // this.className(blackAlphaRow7a)
-
-        this.append(BP7A)
-
-        console.log("Drop")
-    }
+   
     function dragOver2(event) {
         event.preventDefault();
         console.log("over")

@@ -376,6 +376,13 @@ position: relative;
 #blkPawn7Aimg:active {
 cursor:grabbing;
 }
+.chesspiece {
+    width: 40px;
+    height: 40px;
+    background-color:inherit;
+    padding-left: 10px;
+    padding-top: 10px;
+}
 
 #blkPawn7Bimg {
     width: 40px;
