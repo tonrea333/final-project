@@ -3,6 +3,16 @@
     height: 100%;
 
 }
+#StartGame {
+    background-color: blue;
+    border: 5px black;
+    border-radius: 7px;
+    width: 105px;
+    height: 40px;
+
+    color: blanchedalmond;
+
+}
 #gameboard {
     display: grid;
     grid-template-columns: repeat(9, 65px);
@@ -382,6 +392,7 @@ cursor:grabbing;
     background-color:inherit;
     padding-left: 10px;
     padding-top: 10px;
+    position: absolute;
 }
 
 #blkPawn7Bimg {
@@ -779,6 +790,23 @@ cursor:grabbing;
   font-size:40px;
   color: blanchedalmond
 }
+}
+#clock {
+    display:grid;
+    justify-items: center;
+    padding-top: 25px;
+   
+}
+#play1 {
+    width:280px;
+    height:40px;
+    background-color: cornflowerblue;
+    font-size:20px;
+}
+#play2 {
+    width:280px;
+    height:40px;
+    background-color: salmon;
 }
 
 
