@@ -4,8 +4,9 @@ const boardGame = document.querySelector("#gameboard");
 const chessPieces = document.querySelector("#gamepieces");
 const headingChess = document.querySelector("#chessheading");
 const buttonStart = document.querySelector("#StartGame");
-const toprow1 = document.querySelector("#toprow")
-
+const toprow1 = document.querySelector("#toprow");
+const tock = new Audio("tock.mp3");
+const tick = new Audio("tick.mp3")
 //Function and event listner to build board and add pieces
 
 buttonStart.addEventListener("click", startGame);
@@ -64,37 +65,30 @@ function startGame() {
 
     let blackAlphaRow7b = document.createElement("div");
     blackAlphaRow7b.setAttribute("id", "b7");
-    blackAlphaRow7b.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow7b);
 
     let blackAlphaRow7c = document.createElement("div");
     blackAlphaRow7c.setAttribute("id", "c7");
-    blackAlphaRow7c.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow7c);
 
     let blackAlphaRow7d = document.createElement("div");
     blackAlphaRow7d.setAttribute("id", "d7");
-    blackAlphaRow7d.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow7d);
 
     let blackAlphaRow7e = document.createElement("div");
     blackAlphaRow7e.setAttribute("id", "e7");
-    blackAlphaRow7e.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow7e);
 
     let blackAlphaRow7f = document.createElement("div");
     blackAlphaRow7f.setAttribute("id", "f7");
-    blackAlphaRow7f.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow7f);
 
     let blackAlphaRow7g = document.createElement("div");
     blackAlphaRow7g.setAttribute("id", "g7");
-    blackAlphaRow7g.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow7g);
 
     let blackAlphaRow7h = document.createElement("div");
     blackAlphaRow7h.setAttribute("id", "h7");
-    blackAlphaRow7h.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow7h);
     //==================================================================
     let blackAlphaRow6 = document.createElement("div");
@@ -105,42 +99,34 @@ function startGame() {
 
     let blackAlphaRow6a = document.createElement("div");
     blackAlphaRow6a.setAttribute("id", "a6");
-    blackAlphaRow6a.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow6a);
 
     let blackAlphaRow6b = document.createElement("div");
     blackAlphaRow6b.setAttribute("id", "b6");
-    blackAlphaRow6b.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow6b);
 
     let blackAlphaRow6c = document.createElement("div");
     blackAlphaRow6c.setAttribute("id", "c6");
-    blackAlphaRow6c.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow6c);
 
     let blackAlphaRow6d = document.createElement("div");
     blackAlphaRow6d.setAttribute("id", "d6");
-    blackAlphaRow6d.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow6d);
 
     let blackAlphaRow6e = document.createElement("div");
     blackAlphaRow6e.setAttribute("id", "e6");
-    blackAlphaRow6e.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow6e);
 
     let blackAlphaRow6f = document.createElement("div");
     blackAlphaRow6f.setAttribute("id", "f6");
-    blackAlphaRow6f.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow6f);
 
     let blackAlphaRow6g = document.createElement("div");
     blackAlphaRow6g.setAttribute("id", "g6");
-    blackAlphaRow6g.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow6g);
 
     let blackAlphaRow6h = document.createElement("div");
     blackAlphaRow6h.setAttribute("id", "h6");
-    blackAlphaRow6h.setAttribute("draggable", "true");
     boardGame.appendChild(blackAlphaRow6h);
     //=================================================================
 
@@ -409,14 +395,14 @@ function startGame() {
     //==================================================
     //Black pawn placement
 
-    let blkPawn7Aimg = document.createElement("img");
+    const blkPawn7Aimg = document.createElement("img");
     blkPawn7Aimg.setAttribute("id", "blkPawn7Aimg");
     blkPawn7Aimg.src = "pawn-147066_1280.png";
     blackAlphaRow7a.appendChild(blkPawn7Aimg)
 
-    let blkPawn7Bimg = document.createElement("img");
+    const blkPawn7Bimg = document.createElement("img");
     blkPawn7Bimg.setAttribute("id", "blkPawn7Bimg");
-    blkPawn7Bimg.src = "pawn-147066_1280.png";
+    blkPawn7Bimg.src = "blackPawn.png";
     blackAlphaRow7b.appendChild(blkPawn7Bimg);
 
     let blkPawn7Cimg = document.createElement("img");
@@ -578,29 +564,322 @@ function startGame() {
 
 
 
-
+    //let x = [blkrook8Aimg, blkknight8Bimg, blkbishop8Fimg, blkqueen8Dimg, blkknight8Bimg, blkPawn7Bimg, blkknight8Gimg, blkrook8Himg, blkPawn7Aimg, blkPawn7Bimg, blkPawn7Cimg, blkPawn7Dimg, blkPawn7Eimg, blkPawn7Fimg, blkPawn7Gimg, blkPawn7Himg, whtPawn2Aimg, whtPawn2Bimg, whtPawn2Cimg, whtPawn2Dimg, whtPawn2Eimg, whtPawn2Fimg, whtPawn2Gimg, whtPawn2Himg, whtrook1Aimg, whtknight1Bimg, whtbishop1Cimg, whtqueen1Dimg, whtking1Eimg, whtbishop1Fimg, whtknight1Bimg, whtrook1Himg]
+    //console.log(x)
 
     //=========================================================
     //=========================================================
     const BP7B = document.querySelector("#blkPawn7Bimg");
-    BP7B.addEventListener("dragstart", dragStart2);
-    BP7B.addEventListener("dragend", dragEnd2);
+    //BP7B.addEventListener("dragstart", dragStart2);
+    //BP7B.addEventListener("dragend", dragEnd2);
     //pieces queried for movement/ black pawns
 
-    let B7 = document.querySelector("#blkPawn7Aimg");
-    B7.addEventListener("click", onClick);
+    //const BP7A = document.querySelector("#blkPawn7Aimg");
+    //BP7A.addEventListener("mouseover", onClick);
     //function onClick() {
 
-    
-    
-    
-    let BP7A = document.querySelector("#blkPawn7Aimg");
-    BP7A.addEventListener("dragstart", dragStart);
-    BP7A.addEventListener("dragend", dragEnd);
 
-    
+    //function onClick() {
 
 
+    const WP2E = document.querySelector("#whtPawn2Eimg");
+    WP2E.addEventListener("dragstart", dragStart);
+    WP2E.addEventListener("dragend", dragEnd);
+
+
+    function dragStart() {
+        console.log("start");
+        if (dragStart) {
+            tick.play();
+        }
+    }
+    function dragEnd(event) {
+        event.preventDefault()
+        console.log("end");
+    }
+    function dragOver(event) {
+
+        event.preventDefault();
+        console.log("over")
+    }
+    function dragEnter(event) {
+        event.stopPropagation();
+        console.log("enter")
+    }
+    function dragLeave() {
+        console.log("Leave")
+    }
+    function dragDrop() {
+        if (dragEnd) {
+            tock.play();
+        }
+        // this.className(blackAlphaRow7a)
+
+        this.appendChild(WP2E);
+        console.log("Drop")
+    }
+
+//======================================================
+const BP7E = document.querySelector("#blkPawn7Eimg");
+    BP7E.addEventListener("dragstart", dragStart2);
+    BP7E.addEventListener("dragend", dragEnd2);
+
+
+    function dragStart2() {
+        console.log("start");
+        if (dragStart2) {
+            tick.play();
+        }
+    }
+    function dragEnd2(event) {
+        event.preventDefault()
+        console.log("end");
+    }
+    function dragOver2(event) {
+
+        event.preventDefault();
+        console.log("over")
+    }
+    function dragEnter2(event) {
+        event.stopPropagation();
+        console.log("enter")
+    }
+    function dragLeave2() {
+        console.log("Leave")
+    }
+    function dragDrop2() {
+        if (dragEnd) {
+            tock.play();
+        }
+        // this.className(blackAlphaRow7a)
+
+        this.appendChild(BP7E);
+        console.log("Drop")
+    }
+    //===========================================================
+    const WKnght1G = document.querySelector("#whtknight1Gimg");
+    WKnght1G.addEventListener("dragstart", dragStart3);
+    WKnght1G.addEventListener("dragend", dragEnd3);
+
+
+    function dragStart3() {
+        console.log("start");
+        if (dragStart3) {
+            tick.play();
+        }
+    }
+    function dragEnd3(event) {
+        event.preventDefault()
+        console.log("end");
+    }
+    function dragOver3(event) {
+
+        event.preventDefault();
+        console.log("over")
+    }
+    function dragEnter3(event) {
+        event.stopPropagation();
+        console.log("enter")
+    }
+    function dragLeave3() {
+        console.log("Leave")
+    }
+    function dragDrop3() {
+        if (dragEnd) {
+            tock.play();
+        }
+        // this.className(blackAlphaRow7a)
+
+        this.appendChild(WKnght1G);
+        console.log("Drop")
+    }
+//=========================================================
+const BKnght8B = document.querySelector("#blkknight8Bimg");
+BKnght8B.addEventListener("dragstart", dragStart4);
+BKnght8B.addEventListener("dragend", dragEnd4);
+
+
+function dragStart4() {
+    console.log("start");
+    if (dragStart4) {
+        tick.play();
+    }
+}
+function dragEnd4(event) {
+    event.preventDefault()
+    console.log("end");
+}
+function dragOver4(event) {
+
+    event.preventDefault();
+    console.log("over")
+}
+function dragEnter4(event) {
+    event.stopPropagation();
+    console.log("enter")
+}
+function dragLeave4() {
+    console.log("Leave")
+}
+function dragDrop4() {
+    if (dragEnd) {
+        tock.play();
+    }
+    // this.className(blackAlphaRow7a)
+
+    this.appendChild(BKnght8B);
+    console.log("Drop")
+}
+
+//=============================================
+const WBishop1F = document.querySelector("#whtbishop1Fimg");
+WBishop1F.addEventListener("dragstart", dragStart5);
+WBishop1F.addEventListener("dragend", dragEnd5);
+
+
+function dragStart5() {
+console.log("start");
+if (dragStart5) {
+    tick.play();
+}
+}
+function dragEnd5(event) {
+event.preventDefault()
+console.log("end");
+}
+function dragOver5(event) {
+
+event.preventDefault();
+console.log("over")
+}
+function dragEnter5(event) {
+event.stopPropagation();
+console.log("enter")
+}
+function dragLeave5() {
+console.log("Leave")
+}
+function dragDrop5() {
+if (dragEnd) {
+    tock.play();
+}
+// this.className(blackAlphaRow7a)
+
+this.appendChild(WBishop1F);
+console.log("Drop")
+}
+//==================================================
+const BQueen8D = document.querySelector("#blkqueen8Dimg");
+BQueen8D.addEventListener("dragstart", dragStart6);
+BQueen8D.addEventListener("dragend", dragEnd6);
+
+
+function dragStart6() {
+console.log("start");
+if (dragStart6) {
+    tick.play();
+}
+}
+function dragEnd6(event) {
+event.preventDefault()
+console.log("end");
+}
+function dragOver6(event) {
+
+event.preventDefault();
+console.log("over")
+}
+function dragEnter6(event) {
+event.stopPropagation();
+console.log("enter")
+}
+function dragLeave6() {
+console.log("Leave")
+}
+function dragDrop6() {
+if (dragEnd) {
+    tock.play();
+}
+// this.className(blackAlphaRow7a)
+
+this.appendChild(BQueen8D);
+console.log("Drop")
+}
+//====================================================
+const WKing1E = document.querySelector("#whtking1Eimg");
+WKing1E.addEventListener("dragstart", dragStart7);
+WKing1E.addEventListener("dragend", dragEnd7);
+
+
+function dragStart7() {
+console.log("start");
+if (dragStart7) {
+    tick.play();
+}
+}
+function dragEnd7(event) {
+event.preventDefault()
+console.log("end");
+}
+function dragOver7(event) {
+
+event.preventDefault();
+console.log("over")
+}
+function dragEnter7(event) {
+event.stopPropagation();
+console.log("enter")
+}
+function dragLeave7() {
+console.log("Leave")
+}
+function dragDrop7() {
+if (dragEnd) {
+    tock.play();
+}
+// this.className(blackAlphaRow7a)
+
+this.appendChild(WKing1E);
+console.log("Drop")
+}
+
+//====================================================
+const WRook1H = document.querySelector("#whtrook1Himg");
+WRook1H.addEventListener("dragstart", dragStart8);
+WRook1H.addEventListener("dragend", dragEnd8);
+
+
+function dragStart8() {
+console.log("start");
+if (dragStart8) {
+    tick.play();
+}
+}
+function dragEnd8(event) {
+event.preventDefault()
+console.log("end");
+}
+function dragOver8(event) {
+
+event.preventDefault();
+console.log("over")
+}
+function dragEnter8(event) {
+event.stopPropagation();
+console.log("enter")
+}
+function dragLeave8() {
+console.log("Leave")
+}
+function dragDrop8() {
+if (dragEnd) {
+    tock.play();
+}
+// this.className(blackAlphaRow7a)
+
+this.appendChild(WRook1H);
+console.log("Drop")
+}
     //dragevent componenets for movement across each of 64 gameboard squares
     blackAlphaRow8a.addEventListener("dragover", dragOver);
     blackAlphaRow8a.addEventListener("dragenter", dragEnter);
@@ -611,6 +890,11 @@ function startGame() {
     blackAlphaRow7a.addEventListener("dragenter", dragEnter);
     blackAlphaRow7a.addEventListener("dragleave", dragLeave);
     blackAlphaRow7a.addEventListener("drop", dragDrop);
+
+    blackAlphaRow6a.addEventListener("dragover", dragOver2);
+    blackAlphaRow6a.addEventListener("dragenter", dragEnter2);
+    blackAlphaRow6a.addEventListener("dragleave", dragLeave2);
+    blackAlphaRow6a.addEventListener("drop", dragDrop2);
 
     blackAlphaRow6a.addEventListener("dragover", dragOver);
     blackAlphaRow6a.addEventListener("dragenter", dragEnter);
@@ -658,10 +942,10 @@ function startGame() {
     blackAlphaRow6b.addEventListener("dragleave", dragLeave);
     blackAlphaRow6b.addEventListener("drop", dragDrop);
 
-    blackAlphaRow5b.addEventListener("dragover", dragOver);
-    blackAlphaRow5b.addEventListener("dragenter", dragEnter);
-    blackAlphaRow5b.addEventListener("dragleave", dragLeave);
-    blackAlphaRow5b.addEventListener("drop", dragDrop);
+    blackAlphaRow5b.addEventListener("dragover", dragOver5);
+    blackAlphaRow5b.addEventListener("dragenter", dragEnter5);
+    blackAlphaRow5b.addEventListener("dragleave", dragLeave5);
+    blackAlphaRow5b.addEventListener("drop", dragDrop5);
 
     blackAlphaRow4b.addEventListener("dragover", dragOver);
     blackAlphaRow4b.addEventListener("dragenter", dragEnter);
@@ -694,10 +978,10 @@ function startGame() {
     blackAlphaRow7c.addEventListener("dragleave", dragLeave);
     blackAlphaRow7c.addEventListener("drop", dragDrop);
 
-    blackAlphaRow6c.addEventListener("dragover", dragOver);
-    blackAlphaRow6c.addEventListener("dragenter", dragEnter);
-    blackAlphaRow6c.addEventListener("dragleave", dragLeave);
-    blackAlphaRow6c.addEventListener("drop", dragDrop);
+    blackAlphaRow6c.addEventListener("dragover", dragOver4);
+    blackAlphaRow6c.addEventListener("dragenter", dragEnter4);
+    blackAlphaRow6c.addEventListener("dragleave", dragLeave4);
+    blackAlphaRow6c.addEventListener("drop", dragDrop4);
 
     blackAlphaRow5c.addEventListener("dragover", dragOver);
     blackAlphaRow5c.addEventListener("dragenter", dragEnter);
@@ -780,10 +1064,10 @@ function startGame() {
     blackAlphaRow6e.addEventListener("dragleave", dragLeave);
     blackAlphaRow6e.addEventListener("drop", dragDrop);
 
-    blackAlphaRow5e.addEventListener("dragover", dragOver);
-    blackAlphaRow5e.addEventListener("dragenter", dragEnter);
-    blackAlphaRow5e.addEventListener("dragleave", dragLeave);
-    blackAlphaRow5e.addEventListener("drop", dragDrop);
+    blackAlphaRow5e.addEventListener("dragover", dragOver2);
+    blackAlphaRow5e.addEventListener("dragenter", dragEnter2);
+    blackAlphaRow5e.addEventListener("dragleave", dragLeave2);
+    blackAlphaRow5e.addEventListener("drop", dragDrop2);
 
     blackAlphaRow4e.addEventListener("dragover", dragOver);
     blackAlphaRow4e.addEventListener("dragenter", dragEnter);
@@ -817,10 +1101,10 @@ function startGame() {
     blackAlphaRow7f.addEventListener("dragleave", dragLeave);
     blackAlphaRow7f.addEventListener("drop", dragDrop);
 
-    blackAlphaRow6f.addEventListener("dragover", dragOver);
-    blackAlphaRow6f.addEventListener("dragenter", dragEnter);
-    blackAlphaRow6f.addEventListener("dragleave", dragLeave);
-    blackAlphaRow6f.addEventListener("drop", dragDrop);
+    blackAlphaRow6f.addEventListener("dragover", dragOver6);
+    blackAlphaRow6f.addEventListener("dragenter", dragEnter6);
+    blackAlphaRow6f.addEventListener("dragleave", dragLeave6);
+    blackAlphaRow6f.addEventListener("drop", dragDrop6);
 
     blackAlphaRow5f.addEventListener("dragover", dragOver);
     blackAlphaRow5f.addEventListener("dragenter", dragEnter);
@@ -832,20 +1116,20 @@ function startGame() {
     blackAlphaRow4f.addEventListener("dragleave", dragLeave);
     blackAlphaRow4f.addEventListener("drop", dragDrop);
 
-    blackAlphaRow3f.addEventListener("dragover", dragOver);
-    blackAlphaRow3f.addEventListener("dragenter", dragEnter);
-    blackAlphaRow3f.addEventListener("dragleave", dragLeave);
-    blackAlphaRow3f.addEventListener("drop", dragDrop);
+    blackAlphaRow3f.addEventListener("dragover", dragOver3);
+    blackAlphaRow3f.addEventListener("dragenter", dragEnter3);
+    blackAlphaRow3f.addEventListener("dragleave", dragLeave3);
+    blackAlphaRow3f.addEventListener("drop", dragDrop3);
 
     blackAlphaRow2f.addEventListener("dragover", dragOver);
     blackAlphaRow2f.addEventListener("dragenter", dragEnter);
     blackAlphaRow2f.addEventListener("dragleave", dragLeave);
     blackAlphaRow2f.addEventListener("drop", dragDrop);
 
-    blackAlphaRow1f.addEventListener("dragover", dragOver);
-    blackAlphaRow1f.addEventListener("dragenter", dragEnter);
-    blackAlphaRow1f.addEventListener("dragleave", dragLeave);
-    blackAlphaRow1f.addEventListener("drop", dragDrop);
+    blackAlphaRow1f.addEventListener("dragover", dragOver8);
+    blackAlphaRow1f.addEventListener("dragenter", dragEnter8);
+    blackAlphaRow1f.addEventListener("dragleave", dragLeave8);
+    blackAlphaRow1f.addEventListener("drop", dragDrop8);
     //========================================================
 
     blackAlphaRow8g.addEventListener("dragover", dragOver);
@@ -883,10 +1167,10 @@ function startGame() {
     blackAlphaRow2g.addEventListener("dragleave", dragLeave);
     blackAlphaRow2g.addEventListener("drop", dragDrop);
 
-    blackAlphaRow1g.addEventListener("dragover", dragOver);
-    blackAlphaRow1g.addEventListener("dragenter", dragEnter);
-    blackAlphaRow1g.addEventListener("dragleave", dragLeave);
-    blackAlphaRow1g.addEventListener("drop", dragDrop);
+    blackAlphaRow1g.addEventListener("dragover", dragOver7);
+    blackAlphaRow1g.addEventListener("dragenter", dragEnter7);
+    blackAlphaRow1g.addEventListener("dragleave", dragLeave7);
+    blackAlphaRow1g.addEventListener("drop", dragDrop7);
     //=======================================================
 
     blackAlphaRow8h.addEventListener("dragover", dragOver);
@@ -930,81 +1214,14 @@ function startGame() {
     blackAlphaRow1h.addEventListener("drop", dragDrop);
 
     //functions start and end of drag event
-    function dragStart() {
-        console.log("start");
-    }
-    function dragEnd() {
-        console.log("end");
-    }
 
-    function dragOver(event) {
-        event.preventDefault();
-        console.log("over")
-    }
-    function dragEnter(event) {
-        event.preventDefault();
-        console.log("enter")
-    }
-    function dragLeave() {
-        console.log("Leave")
-    }
-    function dragDrop() {
-        // this.className(blackAlphaRow7a)
 
-        this.append(BP7A)
+    //}
+    //}
 
-        console.log("Drop")
-    }
-//}
 
-    blackAlphaRow6b.addEventListener("dragover", dragOver2);
-    blackAlphaRow6b.addEventListener("dragenter", dragEnter2);
-    blackAlphaRow6b.addEventListener("dragleave", dragLeave2);
-    blackAlphaRow6b.addEventListener("drop", dragDrop2);
-
-    blackAlphaRow5b.addEventListener("dragover", dragOver2);
-    blackAlphaRow5b.addEventListener("dragenter", dragEnter2);
-    blackAlphaRow5b.addEventListener("dragleave", dragLeave2);
-    blackAlphaRow5b.addEventListener("drop", dragDrop2);
-
-    blackAlphaRow4b.addEventListener("dragover", dragOver2);
-    blackAlphaRow4b.addEventListener("dragenter", dragEnter2);
-    blackAlphaRow4b.addEventListener("dragleave", dragLeave2);
-    blackAlphaRow4b.addEventListener("drop", dragDrop2);
-
-    function dragStart2() {
-        console.log("start");
-    }
-    function dragEnd2() {
-        console.log("end");
-    }
 
    
-    function dragOver2(event) {
-        event.preventDefault();
-        console.log("over")
-    }
-    function dragEnter2(event) {
-        event.preventDefault();
-        console.log("enter")
-    }
-    function dragLeave2() {
-        console.log("Leave")
-    }
-    function dragDrop2() {
-        // this.className(blackAlphaRow7a)
-
-        this.append(BP7B)
-
-        console.log("Drop")
-    }
-
-    //======================================================
-    //======================================================
-    //BP7A.addEventListener("click", grabPiece);
-    //function grabPiece(){
-    //    blkPawn7Aimg.onmousedown()
-    //}
     //+++++++
     //+++++++
 }
@@ -1015,28 +1232,104 @@ function startGame() {
 
 
 
+//====================================================================
+//====================================================================
 
 
+//two clocks to Convert 5 minutes to seconds by multiplying by 60 equals 300 seconds
+
+const startTime = 5;
+let timeDepricate = startTime * 60;
 
 
+//Timer inside function to prevent start until button pressed
+const beginPlay1 = document.querySelector("#play1");
+const timerDisplay1 = document.querySelector("#timercount1");
+beginPlay1.addEventListener("click", startClock1);
+
+function startClock1() {
 
 
+    //subtracting one second based on interval this creates update of const time1minuets and time 1seconds
+    const timeR1 = setInterval(time1Function, 1000);
+    function time1Function() {
+        timeDepricate--;
+        const time1Minutes = Math.floor(timeDepricate / 60);
+        const time1Seconds = timeDepricate % 60;
+        timerDisplay1.innerHTML = time1Minutes + ":" + time1Seconds;
+        console.log(time1Seconds)
+        console.log(time1Minutes)
 
+    }
 
+ //================================================
+ //stop clock 1   
+    const stopOne = document.querySelector("#stop1");
+    stopOne.addEventListener("click", stopTimer1);
+    function stopTimer1() {
 
-const moveInput = document.querySelector("#movetext");
-const moveButton = document.querySelector("#movebutton");
+        clearInterval(timeR1)
+        console.log("time is up");
+    }
 
-moveInput.addEventListener("click", onClick);
+}
 
-function onClick(currentPosition, movePositon) {
-    if (currentPosition && movePositon) {
+const start2Time = 5;
+let time2Depricate = start2Time * 60;
+//Timer inside function to prevent start until button pressed
+const beginPlay2 = document.querySelector("#play2");
+const timerDisplay2 = document.querySelector("#timercount2");
+beginPlay2.addEventListener("click", startClock2);
+//subtracting one second based on interval this creates update of const time1minuets and time 1seconds
+
+function startClock2() {
+
+    const timeR2 = setInterval(time2Function, 1000);
+    function time2Function() {
+        time2Depricate--;
+        const time2Minutes = Math.floor(time2Depricate / 60);
+        const time2Seconds = time2Depricate % 60;
+        timerDisplay2.innerHTML = time2Minutes + ":" + time2Seconds;
+        console.log(time2Seconds);
+        console.log(time2Minutes);
+    }
+ //================================================
+ //stop clock 2  
+    const stopOne2 = document.querySelector("#stop2");
+    stopOne2.addEventListener("click", stopTimer2);
+    function stopTimer2() {
+
+        clearInterval(timeR2)
+        console.log("time is up");
     }
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//const moveInput = document.querySelector("#movetext");
+//const moveButton = document.querySelector("#movebutton");
+
+//moveInput.addEventListener("click", onClick);
+
+//function onClick(currentPosition, movePositon) {
+ //   if (currentPosition && movePositon) {
+  //  }
+//}
 
 
 

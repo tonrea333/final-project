@@ -6,7 +6,7 @@ const headingChess = document.querySelector("#chessheading");
 const buttonStart = document.querySelector("#StartGame");
 const toprow1 = document.querySelector("#toprow");
 const tock = new Audio("tock.mp3");
-const tick = new Audio ("tick.mp3")
+const tick = new Audio("tick.mp3")
 //Function and event listner to build board and add pieces
 
 buttonStart.addEventListener("click", startGame);
@@ -564,14 +564,14 @@ function startGame() {
 
 
 
-    let x = [blkrook8Aimg, blkknight8Bimg, blkbishop8Fimg, blkqueen8Dimg, blkknight8Bimg, blkPawn7Bimg, blkknight8Gimg, blkrook8Himg, blkPawn7Aimg, blkPawn7Bimg, blkPawn7Cimg, blkPawn7Dimg, blkPawn7Eimg, blkPawn7Fimg, blkPawn7Gimg, blkPawn7Himg, whtPawn2Aimg, whtPawn2Bimg, whtPawn2Cimg, whtPawn2Dimg, whtPawn2Eimg, whtPawn2Fimg, whtPawn2Gimg, whtPawn2Himg, whtrook1Aimg, whtknight1Bimg, whtbishop1Cimg, whtqueen1Dimg, whtking1Eimg, whtbishop1Fimg, whtknight1Bimg, whtrook1Himg]
-    console.log(x)
+    //let x = [blkrook8Aimg, blkknight8Bimg, blkbishop8Fimg, blkqueen8Dimg, blkknight8Bimg, blkPawn7Bimg, blkknight8Gimg, blkrook8Himg, blkPawn7Aimg, blkPawn7Bimg, blkPawn7Cimg, blkPawn7Dimg, blkPawn7Eimg, blkPawn7Fimg, blkPawn7Gimg, blkPawn7Himg, whtPawn2Aimg, whtPawn2Bimg, whtPawn2Cimg, whtPawn2Dimg, whtPawn2Eimg, whtPawn2Fimg, whtPawn2Gimg, whtPawn2Himg, whtrook1Aimg, whtknight1Bimg, whtbishop1Cimg, whtqueen1Dimg, whtking1Eimg, whtbishop1Fimg, whtknight1Bimg, whtrook1Himg]
+    //console.log(x)
 
     //=========================================================
     //=========================================================
     const BP7B = document.querySelector("#blkPawn7Bimg");
-    BP7B.addEventListener("dragstart", dragStart2);
-    BP7B.addEventListener("dragend", dragEnd2);
+    //BP7B.addEventListener("dragstart", dragStart2);
+    //BP7B.addEventListener("dragend", dragEnd2);
     //pieces queried for movement/ black pawns
 
     //const BP7A = document.querySelector("#blkPawn7Aimg");
@@ -582,441 +582,732 @@ function startGame() {
     //function onClick() {
 
 
-        const BP7A = document.querySelector("#blkPawn7Aimg");
-
-            BP7A.addEventListener("dragstart", dragStart);
-            BP7A.addEventListener("dragend", dragEnd);
-            
-
-            function dragStart() {
-                console.log("start");
-                if(dragStart){
-                    tick.play();
-                }
-            }
-            function dragEnd(event) {
-                event.preventDefault()
-                console.log("end");
-            }
-            function dragOver(event) {
-              
-                    event.preventDefault();
-                console.log("over")
-            }
-            function dragEnter(event) {
-                event.stopPropagation();
-                console.log("enter")
-            }
-            function dragLeave() {
-                console.log("Leave")
-            }
-            function dragDrop() {
-                if(dragEnd){
-                    tock.play();
-                }
-                // this.className(blackAlphaRow7a)
-
-                this.appendChild(BP7A);
-                
-
-                console.log("Drop")
-            }
-
-        
-        
-
-
-        //dragevent componenets for movement across each of 64 gameboard squares
-        blackAlphaRow8a.addEventListener("dragover", dragOver);
-        blackAlphaRow8a.addEventListener("dragenter", dragEnter);
-        blackAlphaRow8a.addEventListener("dragleave", dragLeave);
-        blackAlphaRow8a.addEventListener("drop", dragDrop);
-
-        blackAlphaRow7a.addEventListener("dragover", dragOver);
-        blackAlphaRow7a.addEventListener("dragenter", dragEnter);
-        blackAlphaRow7a.addEventListener("dragleave", dragLeave);
-        blackAlphaRow7a.addEventListener("drop", dragDrop);
-
-        blackAlphaRow6a.addEventListener("dragover", dragOver2);
-        blackAlphaRow6a.addEventListener("dragenter", dragEnter2);
-        blackAlphaRow6a.addEventListener("dragleave", dragLeave2);
-        blackAlphaRow6a.addEventListener("drop", dragDrop2);
-
-        blackAlphaRow5a.addEventListener("dragover", dragOver);
-        blackAlphaRow5a.addEventListener("dragenter", dragEnter);
-        blackAlphaRow5a.addEventListener("dragleave", dragLeave);
-        blackAlphaRow5a.addEventListener("drop", dragDrop);
-
-        blackAlphaRow4a.addEventListener("dragover", dragOver);
-        blackAlphaRow4a.addEventListener("dragenter", dragEnter);
-        blackAlphaRow4a.addEventListener("dragleave", dragLeave);
-        blackAlphaRow4a.addEventListener("drop", dragDrop);
-
-        blackAlphaRow3a.addEventListener("dragover", dragOver);
-        blackAlphaRow3a.addEventListener("dragenter", dragEnter);
-        blackAlphaRow3a.addEventListener("dragleave", dragLeave);
-        blackAlphaRow3a.addEventListener("drop", dragDrop);
-
-        blackAlphaRow2a.addEventListener("dragover", dragOver);
-        blackAlphaRow2a.addEventListener("dragenter", dragEnter);
-        blackAlphaRow2a.addEventListener("dragleave", dragLeave);
-        blackAlphaRow2a.addEventListener("drop", dragDrop);
-
-        blackAlphaRow1a.addEventListener("dragover", dragOver);
-        blackAlphaRow1a.addEventListener("dragenter", dragEnter);
-        blackAlphaRow1a.addEventListener("dragleave", dragLeave);
-        blackAlphaRow1a.addEventListener("drop", dragDrop);
-        //=======================================================
-
-        blackAlphaRow8b.addEventListener("dragover", dragOver);
-        blackAlphaRow8b.addEventListener("dragenter", dragEnter);
-        blackAlphaRow8b.addEventListener("dragleave", dragLeave);
-        blackAlphaRow8b.addEventListener("drop", dragDrop);
-
-        blackAlphaRow7b.addEventListener("dragover", dragOver);
-        blackAlphaRow7b.addEventListener("dragenter", dragEnter);
-        blackAlphaRow7b.addEventListener("dragleave", dragLeave);
-        blackAlphaRow7b.addEventListener("drop", dragDrop);
-
-        blackAlphaRow6b.addEventListener("dragover", dragOver);
-        blackAlphaRow6b.addEventListener("dragenter", dragEnter);
-        blackAlphaRow6b.addEventListener("dragleave", dragLeave);
-        blackAlphaRow6b.addEventListener("drop", dragDrop);
-
-        blackAlphaRow5b.addEventListener("dragover", dragOver);
-        blackAlphaRow5b.addEventListener("dragenter", dragEnter);
-        blackAlphaRow5b.addEventListener("dragleave", dragLeave);
-        blackAlphaRow5b.addEventListener("drop", dragDrop);
-
-        blackAlphaRow4b.addEventListener("dragover", dragOver);
-        blackAlphaRow4b.addEventListener("dragenter", dragEnter);
-        blackAlphaRow4b.addEventListener("dragleave", dragLeave);
-        blackAlphaRow4b.addEventListener("drop", dragDrop);
-
-        blackAlphaRow3b.addEventListener("dragover", dragOver);
-        blackAlphaRow3b.addEventListener("dragenter", dragEnter);
-        blackAlphaRow3b.addEventListener("dragleave", dragLeave);
-        blackAlphaRow3b.addEventListener("drop", dragDrop);
-
-        blackAlphaRow2b.addEventListener("dragover", dragOver);
-        blackAlphaRow2b.addEventListener("dragenter", dragEnter);
-        blackAlphaRow2b.addEventListener("dragleave", dragLeave);
-        blackAlphaRow2b.addEventListener("drop", dragDrop);
-
-        blackAlphaRow1b.addEventListener("dragover", dragOver);
-        blackAlphaRow1b.addEventListener("dragenter", dragEnter);
-        blackAlphaRow1b.addEventListener("dragleave", dragLeave);
-        blackAlphaRow1b.addEventListener("drop", dragDrop);
-        //======================================================
-
-        blackAlphaRow8c.addEventListener("dragover", dragOver);
-        blackAlphaRow8c.addEventListener("dragenter", dragEnter);
-        blackAlphaRow8c.addEventListener("dragleave", dragLeave);
-        blackAlphaRow8c.addEventListener("drop", dragDrop);
-
-        blackAlphaRow7c.addEventListener("dragover", dragOver);
-        blackAlphaRow7c.addEventListener("dragenter", dragEnter);
-        blackAlphaRow7c.addEventListener("dragleave", dragLeave);
-        blackAlphaRow7c.addEventListener("drop", dragDrop);
-
-        blackAlphaRow6c.addEventListener("dragover", dragOver);
-        blackAlphaRow6c.addEventListener("dragenter", dragEnter);
-        blackAlphaRow6c.addEventListener("dragleave", dragLeave);
-        blackAlphaRow6c.addEventListener("drop", dragDrop);
-
-        blackAlphaRow5c.addEventListener("dragover", dragOver);
-        blackAlphaRow5c.addEventListener("dragenter", dragEnter);
-        blackAlphaRow5c.addEventListener("dragleave", dragLeave);
-        blackAlphaRow5c.addEventListener("drop", dragDrop);
-
-        blackAlphaRow4c.addEventListener("dragover", dragOver);
-        blackAlphaRow4c.addEventListener("dragenter", dragEnter);
-        blackAlphaRow4c.addEventListener("dragleave", dragLeave);
-        blackAlphaRow4c.addEventListener("drop", dragDrop);
-
-        blackAlphaRow3c.addEventListener("dragover", dragOver);
-        blackAlphaRow3c.addEventListener("dragenter", dragEnter);
-        blackAlphaRow3c.addEventListener("dragleave", dragLeave);
-        blackAlphaRow3c.addEventListener("drop", dragDrop);
-
-        blackAlphaRow2c.addEventListener("dragover", dragOver);
-        blackAlphaRow2c.addEventListener("dragenter", dragEnter);
-        blackAlphaRow2c.addEventListener("dragleave", dragLeave);
-        blackAlphaRow2c.addEventListener("drop", dragDrop);
-
-        blackAlphaRow1c.addEventListener("dragover", dragOver);
-        blackAlphaRow1c.addEventListener("dragenter", dragEnter);
-        blackAlphaRow1c.addEventListener("dragleave", dragLeave);
-        blackAlphaRow1c.addEventListener("drop", dragDrop);
-        //=======================================================
-        blackAlphaRow8d.addEventListener("dragover", dragOver);
-        blackAlphaRow8d.addEventListener("dragenter", dragEnter);
-        blackAlphaRow8d.addEventListener("dragleave", dragLeave);
-        blackAlphaRow8d.addEventListener("drop", dragDrop);
-
-        blackAlphaRow7d.addEventListener("dragover", dragOver);
-        blackAlphaRow7d.addEventListener("dragenter", dragEnter);
-        blackAlphaRow7d.addEventListener("dragleave", dragLeave);
-        blackAlphaRow7d.addEventListener("drop", dragDrop);
-
-        blackAlphaRow6d.addEventListener("dragover", dragOver);
-        blackAlphaRow6d.addEventListener("dragenter", dragEnter);
-        blackAlphaRow6d.addEventListener("dragleave", dragLeave);
-        blackAlphaRow6d.addEventListener("drop", dragDrop);
-
-        blackAlphaRow5d.addEventListener("dragover", dragOver);
-        blackAlphaRow5d.addEventListener("dragenter", dragEnter);
-        blackAlphaRow5d.addEventListener("dragleave", dragLeave);
-        blackAlphaRow5d.addEventListener("drop", dragDrop);
-
-        blackAlphaRow4d.addEventListener("dragover", dragOver);
-        blackAlphaRow4d.addEventListener("dragenter", dragEnter);
-        blackAlphaRow4d.addEventListener("dragleave", dragLeave);
-        blackAlphaRow4d.addEventListener("drop", dragDrop);
-
-        blackAlphaRow3d.addEventListener("dragover", dragOver);
-        blackAlphaRow3d.addEventListener("dragenter", dragEnter);
-        blackAlphaRow3d.addEventListener("dragleave", dragLeave);
-        blackAlphaRow3d.addEventListener("drop", dragDrop);
-
-        blackAlphaRow2d.addEventListener("dragover", dragOver);
-        blackAlphaRow2d.addEventListener("dragenter", dragEnter);
-        blackAlphaRow2d.addEventListener("dragleave", dragLeave);
-        blackAlphaRow2d.addEventListener("drop", dragDrop);
-
-        blackAlphaRow1d.addEventListener("dragover", dragOver);
-        blackAlphaRow1d.addEventListener("dragenter", dragEnter);
-        blackAlphaRow1d.addEventListener("dragleave", dragLeave);
-        blackAlphaRow1d.addEventListener("drop", dragDrop);
-        //========================================================
-
-        blackAlphaRow8e.addEventListener("dragover", dragOver);
-        blackAlphaRow8e.addEventListener("dragenter", dragEnter);
-        blackAlphaRow8e.addEventListener("dragleave", dragLeave);
-        blackAlphaRow8e.addEventListener("drop", dragDrop);
-
-        blackAlphaRow7e.addEventListener("dragover", dragOver);
-        blackAlphaRow7e.addEventListener("dragenter", dragEnter);
-        blackAlphaRow7e.addEventListener("dragleave", dragLeave);
-        blackAlphaRow7e.addEventListener("drop", dragDrop);
-
-        blackAlphaRow6e.addEventListener("dragover", dragOver);
-        blackAlphaRow6e.addEventListener("dragenter", dragEnter);
-        blackAlphaRow6e.addEventListener("dragleave", dragLeave);
-        blackAlphaRow6e.addEventListener("drop", dragDrop);
-
-        blackAlphaRow5e.addEventListener("dragover", dragOver);
-        blackAlphaRow5e.addEventListener("dragenter", dragEnter);
-        blackAlphaRow5e.addEventListener("dragleave", dragLeave);
-        blackAlphaRow5e.addEventListener("drop", dragDrop);
-
-        blackAlphaRow4e.addEventListener("dragover", dragOver);
-        blackAlphaRow4e.addEventListener("dragenter", dragEnter);
-        blackAlphaRow4e.addEventListener("dragleave", dragLeave);
-        blackAlphaRow4e.addEventListener("drop", dragDrop);
-
-        blackAlphaRow3e.addEventListener("dragover", dragOver);
-        blackAlphaRow3e.addEventListener("dragenter", dragEnter);
-        blackAlphaRow3e.addEventListener("dragleave", dragLeave);
-        blackAlphaRow3e.addEventListener("drop", dragDrop);
-
-        blackAlphaRow2e.addEventListener("dragover", dragOver);
-        blackAlphaRow2e.addEventListener("dragenter", dragEnter);
-        blackAlphaRow2e.addEventListener("dragleave", dragLeave);
-        blackAlphaRow2e.addEventListener("drop", dragDrop);
-
-        blackAlphaRow1e.addEventListener("dragover", dragOver);
-        blackAlphaRow1e.addEventListener("dragenter", dragEnter);
-        blackAlphaRow1e.addEventListener("dragleave", dragLeave);
-        blackAlphaRow1e.addEventListener("drop", dragDrop);
-
-        //========================================================
-
-        blackAlphaRow8f.addEventListener("dragover", dragOver);
-        blackAlphaRow8f.addEventListener("dragenter", dragEnter);
-        blackAlphaRow8f.addEventListener("dragleave", dragLeave);
-        blackAlphaRow8f.addEventListener("drop", dragDrop);
-
-        blackAlphaRow7f.addEventListener("dragover", dragOver);
-        blackAlphaRow7f.addEventListener("dragenter", dragEnter);
-        blackAlphaRow7f.addEventListener("dragleave", dragLeave);
-        blackAlphaRow7f.addEventListener("drop", dragDrop);
-
-        blackAlphaRow6f.addEventListener("dragover", dragOver);
-        blackAlphaRow6f.addEventListener("dragenter", dragEnter);
-        blackAlphaRow6f.addEventListener("dragleave", dragLeave);
-        blackAlphaRow6f.addEventListener("drop", dragDrop);
-
-        blackAlphaRow5f.addEventListener("dragover", dragOver);
-        blackAlphaRow5f.addEventListener("dragenter", dragEnter);
-        blackAlphaRow5f.addEventListener("dragleave", dragLeave);
-        blackAlphaRow5f.addEventListener("drop", dragDrop);
-
-        blackAlphaRow4f.addEventListener("dragover", dragOver);
-        blackAlphaRow4f.addEventListener("dragenter", dragEnter);
-        blackAlphaRow4f.addEventListener("dragleave", dragLeave);
-        blackAlphaRow4f.addEventListener("drop", dragDrop);
-
-        blackAlphaRow3f.addEventListener("dragover", dragOver);
-        blackAlphaRow3f.addEventListener("dragenter", dragEnter);
-        blackAlphaRow3f.addEventListener("dragleave", dragLeave);
-        blackAlphaRow3f.addEventListener("drop", dragDrop);
-
-        blackAlphaRow2f.addEventListener("dragover", dragOver);
-        blackAlphaRow2f.addEventListener("dragenter", dragEnter);
-        blackAlphaRow2f.addEventListener("dragleave", dragLeave);
-        blackAlphaRow2f.addEventListener("drop", dragDrop);
-
-        blackAlphaRow1f.addEventListener("dragover", dragOver);
-        blackAlphaRow1f.addEventListener("dragenter", dragEnter);
-        blackAlphaRow1f.addEventListener("dragleave", dragLeave);
-        blackAlphaRow1f.addEventListener("drop", dragDrop);
-        //========================================================
-
-        blackAlphaRow8g.addEventListener("dragover", dragOver);
-        blackAlphaRow8g.addEventListener("dragenter", dragEnter);
-        blackAlphaRow8g.addEventListener("dragleave", dragLeave);
-        blackAlphaRow8g.addEventListener("drop", dragDrop);
-
-        blackAlphaRow7g.addEventListener("dragover", dragOver);
-        blackAlphaRow7g.addEventListener("dragenter", dragEnter);
-        blackAlphaRow7g.addEventListener("dragleave", dragLeave);
-        blackAlphaRow7g.addEventListener("drop", dragDrop);
-
-        blackAlphaRow6g.addEventListener("dragover", dragOver);
-        blackAlphaRow6g.addEventListener("dragenter", dragEnter);
-        blackAlphaRow6g.addEventListener("dragleave", dragLeave);
-        blackAlphaRow6g.addEventListener("drop", dragDrop);
-
-        blackAlphaRow5g.addEventListener("dragover", dragOver);
-        blackAlphaRow5g.addEventListener("dragenter", dragEnter);
-        blackAlphaRow5g.addEventListener("dragleave", dragLeave);
-        blackAlphaRow5g.addEventListener("drop", dragDrop);
-
-        blackAlphaRow4g.addEventListener("dragover", dragOver);
-        blackAlphaRow4g.addEventListener("dragenter", dragEnter);
-        blackAlphaRow4g.addEventListener("dragleave", dragLeave);
-        blackAlphaRow4g.addEventListener("drop", dragDrop);
-
-        blackAlphaRow3g.addEventListener("dragover", dragOver);
-        blackAlphaRow3g.addEventListener("dragenter", dragEnter);
-        blackAlphaRow3g.addEventListener("dragleave", dragLeave);
-        blackAlphaRow3g.addEventListener("drop", dragDrop);
-
-        blackAlphaRow2g.addEventListener("dragover", dragOver);
-        blackAlphaRow2g.addEventListener("dragenter", dragEnter);
-        blackAlphaRow2g.addEventListener("dragleave", dragLeave);
-        blackAlphaRow2g.addEventListener("drop", dragDrop);
-
-        blackAlphaRow1g.addEventListener("dragover", dragOver);
-        blackAlphaRow1g.addEventListener("dragenter", dragEnter);
-        blackAlphaRow1g.addEventListener("dragleave", dragLeave);
-        blackAlphaRow1g.addEventListener("drop", dragDrop);
-        //=======================================================
-
-        blackAlphaRow8h.addEventListener("dragover", dragOver);
-        blackAlphaRow8h.addEventListener("dragenter", dragEnter);
-        blackAlphaRow8h.addEventListener("dragleave", dragLeave);
-        blackAlphaRow8h.addEventListener("drop", dragDrop);
-
-        blackAlphaRow7h.addEventListener("dragover", dragOver);
-        blackAlphaRow7h.addEventListener("dragenter", dragEnter);
-        blackAlphaRow7h.addEventListener("dragleave", dragLeave);
-        blackAlphaRow7h.addEventListener("drop", dragDrop);
-
-        blackAlphaRow6h.addEventListener("dragover", dragOver);
-        blackAlphaRow6h.addEventListener("dragenter", dragEnter);
-        blackAlphaRow6h.addEventListener("dragleave", dragLeave);
-        blackAlphaRow6h.addEventListener("drop", dragDrop);
-
-        blackAlphaRow5h.addEventListener("dragover", dragOver);
-        blackAlphaRow5h.addEventListener("dragenter", dragEnter);
-        blackAlphaRow5h.addEventListener("dragleave", dragLeave);
-        blackAlphaRow5h.addEventListener("drop", dragDrop);
-
-        blackAlphaRow4h.addEventListener("dragover", dragOver);
-        blackAlphaRow4h.addEventListener("dragenter", dragEnter);
-        blackAlphaRow4h.addEventListener("dragleave", dragLeave);
-        blackAlphaRow4h.addEventListener("drop", dragDrop);
-
-        blackAlphaRow3h.addEventListener("dragover", dragOver);
-        blackAlphaRow3h.addEventListener("dragenter", dragEnter);
-        blackAlphaRow3h.addEventListener("dragleave", dragLeave);
-        blackAlphaRow3h.addEventListener("drop", dragDrop);
-
-        blackAlphaRow2h.addEventListener("dragover", dragOver);
-        blackAlphaRow2h.addEventListener("dragenter", dragEnter);
-        blackAlphaRow2h.addEventListener("dragleave", dragLeave);
-        blackAlphaRow2h.addEventListener("drop", dragDrop);
-
-        blackAlphaRow1h.addEventListener("dragover", dragOver);
-        blackAlphaRow1h.addEventListener("dragenter", dragEnter);
-        blackAlphaRow1h.addEventListener("dragleave", dragLeave);
-        blackAlphaRow1h.addEventListener("drop", dragDrop); 
-       
-        //functions start and end of drag event
-
-
-    //}
-    //}
+    const WP2E = document.querySelector("#whtPawn2Eimg");
+    WP2E.addEventListener("dragstart", dragStart);
+    WP2E.addEventListener("dragend", dragEnd);
+
+
+    function dragStart() {
+        console.log("start");
+        if (dragStart) {
+            tick.play();
+        }
+    }
+    function dragEnd(event) {
+        event.preventDefault()
+        console.log("end");
+    }
+    function dragOver(event) {
+
+        event.preventDefault();
+        console.log("over")
+    }
+    function dragEnter(event) {
+        event.stopPropagation();
+        console.log("enter")
+    }
+    function dragLeave() {
+        console.log("Leave")
+    }
+    function dragDrop() {
+        if (dragEnd) {
+            tock.play();
+        }
+        // this.className(blackAlphaRow7a)
+
+        this.appendChild(WP2E);
+        console.log("Drop")
+    }
+
+//======================================================
+const BP7E = document.querySelector("#blkPawn7Eimg");
+    BP7E.addEventListener("dragstart", dragStart2);
+    BP7E.addEventListener("dragend", dragEnd2);
 
 
     function dragStart2() {
         console.log("start");
+        if (dragStart2) {
+            tick.play();
+        }
     }
-    function dragEnd2() {
+    function dragEnd2(event) {
+        event.preventDefault()
         console.log("end");
     }
-
-
     function dragOver2(event) {
+
         event.preventDefault();
         console.log("over")
     }
     function dragEnter2(event) {
-        event.preventDefault();
+        event.stopPropagation();
         console.log("enter")
     }
     function dragLeave2() {
         console.log("Leave")
     }
     function dragDrop2() {
+        if (dragEnd) {
+            tock.play();
+        }
         // this.className(blackAlphaRow7a)
 
-        this.appendChild(BP7B)
-
+        this.appendChild(BP7E);
         console.log("Drop")
     }
+    //===========================================================
+    const WKnght1G = document.querySelector("#whtknight1Gimg");
+    WKnght1G.addEventListener("dragstart", dragStart3);
+    WKnght1G.addEventListener("dragend", dragEnd3);
 
+
+    function dragStart3() {
+        console.log("start");
+        if (dragStart3) {
+            tick.play();
+        }
+    }
+    function dragEnd3(event) {
+        event.preventDefault()
+        console.log("end");
+    }
+    function dragOver3(event) {
+
+        event.preventDefault();
+        console.log("over")
+    }
+    function dragEnter3(event) {
+        event.stopPropagation();
+        console.log("enter")
+    }
+    function dragLeave3() {
+        console.log("Leave")
+    }
+    function dragDrop3() {
+        if (dragEnd) {
+            tock.play();
+        }
+        // this.className(blackAlphaRow7a)
+
+        this.appendChild(WKnght1G);
+        console.log("Drop")
+    }
+//=========================================================
+const BKnght8B = document.querySelector("#blkknight8Bimg");
+BKnght8B.addEventListener("dragstart", dragStart4);
+BKnght8B.addEventListener("dragend", dragEnd4);
+
+
+function dragStart4() {
+    console.log("start");
+    if (dragStart4) {
+        tick.play();
+    }
+}
+function dragEnd4(event) {
+    event.preventDefault()
+    console.log("end");
+}
+function dragOver4(event) {
+
+    event.preventDefault();
+    console.log("over")
+}
+function dragEnter4(event) {
+    event.stopPropagation();
+    console.log("enter")
+}
+function dragLeave4() {
+    console.log("Leave")
+}
+function dragDrop4() {
+    if (dragEnd) {
+        tock.play();
+    }
+    // this.className(blackAlphaRow7a)
+
+    this.appendChild(BKnght8B);
+    console.log("Drop")
+}
+
+//=============================================
+const WBishop1F = document.querySelector("#whtbishop1Fimg");
+WBishop1F.addEventListener("dragstart", dragStart5);
+WBishop1F.addEventListener("dragend", dragEnd5);
+
+
+function dragStart5() {
+console.log("start");
+if (dragStart5) {
+    tick.play();
+}
+}
+function dragEnd5(event) {
+event.preventDefault()
+console.log("end");
+}
+function dragOver5(event) {
+
+event.preventDefault();
+console.log("over")
+}
+function dragEnter5(event) {
+event.stopPropagation();
+console.log("enter")
+}
+function dragLeave5() {
+console.log("Leave")
+}
+function dragDrop5() {
+if (dragEnd) {
+    tock.play();
+}
+// this.className(blackAlphaRow7a)
+
+this.appendChild(WBishop1F);
+console.log("Drop")
+}
+//==================================================
+const BQueen8D = document.querySelector("#blkqueen8Dimg");
+BQueen8D.addEventListener("dragstart", dragStart6);
+BQueen8D.addEventListener("dragend", dragEnd6);
+
+
+function dragStart6() {
+console.log("start");
+if (dragStart6) {
+    tick.play();
+}
+}
+function dragEnd6(event) {
+event.preventDefault()
+console.log("end");
+}
+function dragOver6(event) {
+
+event.preventDefault();
+console.log("over")
+}
+function dragEnter6(event) {
+event.stopPropagation();
+console.log("enter")
+}
+function dragLeave6() {
+console.log("Leave")
+}
+function dragDrop6() {
+if (dragEnd) {
+    tock.play();
+}
+// this.className(blackAlphaRow7a)
+
+this.appendChild(BQueen8D);
+console.log("Drop")
+}
+//====================================================
+const WKing1E = document.querySelector("#whtking1Eimg");
+WKing1E.addEventListener("dragstart", dragStart7);
+WKing1E.addEventListener("dragend", dragEnd7);
+
+
+function dragStart7() {
+console.log("start");
+if (dragStart7) {
+    tick.play();
+}
+}
+function dragEnd7(event) {
+event.preventDefault()
+console.log("end");
+}
+function dragOver7(event) {
+
+event.preventDefault();
+console.log("over")
+}
+function dragEnter7(event) {
+event.stopPropagation();
+console.log("enter")
+}
+function dragLeave7() {
+console.log("Leave")
+}
+function dragDrop7() {
+if (dragEnd) {
+    tock.play();
+}
+// this.className(blackAlphaRow7a)
+
+this.appendChild(WKing1E);
+console.log("Drop")
+}
+
+//====================================================
+const WRook1H = document.querySelector("#whtrook1Himg");
+WRook1H.addEventListener("dragstart", dragStart8);
+WRook1H.addEventListener("dragend", dragEnd8);
+
+
+function dragStart8() {
+console.log("start");
+if (dragStart8) {
+    tick.play();
+}
+}
+function dragEnd8(event) {
+event.preventDefault()
+console.log("end");
+}
+function dragOver8(event) {
+
+event.preventDefault();
+console.log("over")
+}
+function dragEnter8(event) {
+event.stopPropagation();
+console.log("enter")
+}
+function dragLeave8() {
+console.log("Leave")
+}
+function dragDrop8() {
+if (dragEnd) {
+    tock.play();
+}
+// this.className(blackAlphaRow7a)
+
+this.appendChild(WRook1H);
+console.log("Drop")
+}
+    //dragevent componenets for movement across each of 64 gameboard squares
+    blackAlphaRow8a.addEventListener("dragover", dragOver);
+    blackAlphaRow8a.addEventListener("dragenter", dragEnter);
+    blackAlphaRow8a.addEventListener("dragleave", dragLeave);
+    blackAlphaRow8a.addEventListener("drop", dragDrop);
+
+    blackAlphaRow7a.addEventListener("dragover", dragOver);
+    blackAlphaRow7a.addEventListener("dragenter", dragEnter);
+    blackAlphaRow7a.addEventListener("dragleave", dragLeave);
+    blackAlphaRow7a.addEventListener("drop", dragDrop);
+
+    blackAlphaRow6a.addEventListener("dragover", dragOver2);
+    blackAlphaRow6a.addEventListener("dragenter", dragEnter2);
+    blackAlphaRow6a.addEventListener("dragleave", dragLeave2);
+    blackAlphaRow6a.addEventListener("drop", dragDrop2);
+
+    blackAlphaRow6a.addEventListener("dragover", dragOver);
+    blackAlphaRow6a.addEventListener("dragenter", dragEnter);
+    blackAlphaRow6a.addEventListener("dragleave", dragLeave);
+    blackAlphaRow6a.addEventListener("drop", dragDrop);
+
+    blackAlphaRow5a.addEventListener("dragover", dragOver);
+    blackAlphaRow5a.addEventListener("dragenter", dragEnter);
+    blackAlphaRow5a.addEventListener("dragleave", dragLeave);
+    blackAlphaRow5a.addEventListener("drop", dragDrop);
+
+    blackAlphaRow4a.addEventListener("dragover", dragOver);
+    blackAlphaRow4a.addEventListener("dragenter", dragEnter);
+    blackAlphaRow4a.addEventListener("dragleave", dragLeave);
+    blackAlphaRow4a.addEventListener("drop", dragDrop);
+
+    blackAlphaRow3a.addEventListener("dragover", dragOver);
+    blackAlphaRow3a.addEventListener("dragenter", dragEnter);
+    blackAlphaRow3a.addEventListener("dragleave", dragLeave);
+    blackAlphaRow3a.addEventListener("drop", dragDrop);
+
+    blackAlphaRow2a.addEventListener("dragover", dragOver);
+    blackAlphaRow2a.addEventListener("dragenter", dragEnter);
+    blackAlphaRow2a.addEventListener("dragleave", dragLeave);
+    blackAlphaRow2a.addEventListener("drop", dragDrop);
+
+    blackAlphaRow1a.addEventListener("dragover", dragOver);
+    blackAlphaRow1a.addEventListener("dragenter", dragEnter);
+    blackAlphaRow1a.addEventListener("dragleave", dragLeave);
+    blackAlphaRow1a.addEventListener("drop", dragDrop);
+    //=======================================================
+
+    blackAlphaRow8b.addEventListener("dragover", dragOver);
+    blackAlphaRow8b.addEventListener("dragenter", dragEnter);
+    blackAlphaRow8b.addEventListener("dragleave", dragLeave);
+    blackAlphaRow8b.addEventListener("drop", dragDrop);
+
+    blackAlphaRow7b.addEventListener("dragover", dragOver);
+    blackAlphaRow7b.addEventListener("dragenter", dragEnter);
+    blackAlphaRow7b.addEventListener("dragleave", dragLeave);
+    blackAlphaRow7b.addEventListener("drop", dragDrop);
+
+    blackAlphaRow6b.addEventListener("dragover", dragOver);
+    blackAlphaRow6b.addEventListener("dragenter", dragEnter);
+    blackAlphaRow6b.addEventListener("dragleave", dragLeave);
+    blackAlphaRow6b.addEventListener("drop", dragDrop);
+
+    blackAlphaRow5b.addEventListener("dragover", dragOver5);
+    blackAlphaRow5b.addEventListener("dragenter", dragEnter5);
+    blackAlphaRow5b.addEventListener("dragleave", dragLeave5);
+    blackAlphaRow5b.addEventListener("drop", dragDrop5);
+
+    blackAlphaRow4b.addEventListener("dragover", dragOver);
+    blackAlphaRow4b.addEventListener("dragenter", dragEnter);
+    blackAlphaRow4b.addEventListener("dragleave", dragLeave);
+    blackAlphaRow4b.addEventListener("drop", dragDrop);
+
+    blackAlphaRow3b.addEventListener("dragover", dragOver);
+    blackAlphaRow3b.addEventListener("dragenter", dragEnter);
+    blackAlphaRow3b.addEventListener("dragleave", dragLeave);
+    blackAlphaRow3b.addEventListener("drop", dragDrop);
+
+    blackAlphaRow2b.addEventListener("dragover", dragOver);
+    blackAlphaRow2b.addEventListener("dragenter", dragEnter);
+    blackAlphaRow2b.addEventListener("dragleave", dragLeave);
+    blackAlphaRow2b.addEventListener("drop", dragDrop);
+
+    blackAlphaRow1b.addEventListener("dragover", dragOver);
+    blackAlphaRow1b.addEventListener("dragenter", dragEnter);
+    blackAlphaRow1b.addEventListener("dragleave", dragLeave);
+    blackAlphaRow1b.addEventListener("drop", dragDrop);
     //======================================================
-    //======================================================
-    //BP7A.addEventListener("click", grabPiece);
-    //function grabPiece(){
-    //    blkPawn7Aimg.onmousedown()
+
+    blackAlphaRow8c.addEventListener("dragover", dragOver);
+    blackAlphaRow8c.addEventListener("dragenter", dragEnter);
+    blackAlphaRow8c.addEventListener("dragleave", dragLeave);
+    blackAlphaRow8c.addEventListener("drop", dragDrop);
+
+    blackAlphaRow7c.addEventListener("dragover", dragOver);
+    blackAlphaRow7c.addEventListener("dragenter", dragEnter);
+    blackAlphaRow7c.addEventListener("dragleave", dragLeave);
+    blackAlphaRow7c.addEventListener("drop", dragDrop);
+
+    blackAlphaRow6c.addEventListener("dragover", dragOver4);
+    blackAlphaRow6c.addEventListener("dragenter", dragEnter4);
+    blackAlphaRow6c.addEventListener("dragleave", dragLeave4);
+    blackAlphaRow6c.addEventListener("drop", dragDrop4);
+
+    blackAlphaRow5c.addEventListener("dragover", dragOver);
+    blackAlphaRow5c.addEventListener("dragenter", dragEnter);
+    blackAlphaRow5c.addEventListener("dragleave", dragLeave);
+    blackAlphaRow5c.addEventListener("drop", dragDrop);
+
+    blackAlphaRow4c.addEventListener("dragover", dragOver);
+    blackAlphaRow4c.addEventListener("dragenter", dragEnter);
+    blackAlphaRow4c.addEventListener("dragleave", dragLeave);
+    blackAlphaRow4c.addEventListener("drop", dragDrop);
+
+    blackAlphaRow3c.addEventListener("dragover", dragOver);
+    blackAlphaRow3c.addEventListener("dragenter", dragEnter);
+    blackAlphaRow3c.addEventListener("dragleave", dragLeave);
+    blackAlphaRow3c.addEventListener("drop", dragDrop);
+
+    blackAlphaRow2c.addEventListener("dragover", dragOver);
+    blackAlphaRow2c.addEventListener("dragenter", dragEnter);
+    blackAlphaRow2c.addEventListener("dragleave", dragLeave);
+    blackAlphaRow2c.addEventListener("drop", dragDrop);
+
+    blackAlphaRow1c.addEventListener("dragover", dragOver);
+    blackAlphaRow1c.addEventListener("dragenter", dragEnter);
+    blackAlphaRow1c.addEventListener("dragleave", dragLeave);
+    blackAlphaRow1c.addEventListener("drop", dragDrop);
+    //=======================================================
+    blackAlphaRow8d.addEventListener("dragover", dragOver);
+    blackAlphaRow8d.addEventListener("dragenter", dragEnter);
+    blackAlphaRow8d.addEventListener("dragleave", dragLeave);
+    blackAlphaRow8d.addEventListener("drop", dragDrop);
+
+    blackAlphaRow7d.addEventListener("dragover", dragOver);
+    blackAlphaRow7d.addEventListener("dragenter", dragEnter);
+    blackAlphaRow7d.addEventListener("dragleave", dragLeave);
+    blackAlphaRow7d.addEventListener("drop", dragDrop);
+
+    blackAlphaRow6d.addEventListener("dragover", dragOver);
+    blackAlphaRow6d.addEventListener("dragenter", dragEnter);
+    blackAlphaRow6d.addEventListener("dragleave", dragLeave);
+    blackAlphaRow6d.addEventListener("drop", dragDrop);
+
+    blackAlphaRow5d.addEventListener("dragover", dragOver);
+    blackAlphaRow5d.addEventListener("dragenter", dragEnter);
+    blackAlphaRow5d.addEventListener("dragleave", dragLeave);
+    blackAlphaRow5d.addEventListener("drop", dragDrop);
+
+    blackAlphaRow4d.addEventListener("dragover", dragOver);
+    blackAlphaRow4d.addEventListener("dragenter", dragEnter);
+    blackAlphaRow4d.addEventListener("dragleave", dragLeave);
+    blackAlphaRow4d.addEventListener("drop", dragDrop);
+
+    blackAlphaRow3d.addEventListener("dragover", dragOver);
+    blackAlphaRow3d.addEventListener("dragenter", dragEnter);
+    blackAlphaRow3d.addEventListener("dragleave", dragLeave);
+    blackAlphaRow3d.addEventListener("drop", dragDrop);
+
+    blackAlphaRow2d.addEventListener("dragover", dragOver);
+    blackAlphaRow2d.addEventListener("dragenter", dragEnter);
+    blackAlphaRow2d.addEventListener("dragleave", dragLeave);
+    blackAlphaRow2d.addEventListener("drop", dragDrop);
+
+    blackAlphaRow1d.addEventListener("dragover", dragOver);
+    blackAlphaRow1d.addEventListener("dragenter", dragEnter);
+    blackAlphaRow1d.addEventListener("dragleave", dragLeave);
+    blackAlphaRow1d.addEventListener("drop", dragDrop);
+    //========================================================
+
+    blackAlphaRow8e.addEventListener("dragover", dragOver);
+    blackAlphaRow8e.addEventListener("dragenter", dragEnter);
+    blackAlphaRow8e.addEventListener("dragleave", dragLeave);
+    blackAlphaRow8e.addEventListener("drop", dragDrop);
+
+    blackAlphaRow7e.addEventListener("dragover", dragOver);
+    blackAlphaRow7e.addEventListener("dragenter", dragEnter);
+    blackAlphaRow7e.addEventListener("dragleave", dragLeave);
+    blackAlphaRow7e.addEventListener("drop", dragDrop);
+
+    blackAlphaRow6e.addEventListener("dragover", dragOver);
+    blackAlphaRow6e.addEventListener("dragenter", dragEnter);
+    blackAlphaRow6e.addEventListener("dragleave", dragLeave);
+    blackAlphaRow6e.addEventListener("drop", dragDrop);
+
+    blackAlphaRow5e.addEventListener("dragover", dragOver2);
+    blackAlphaRow5e.addEventListener("dragenter", dragEnter2);
+    blackAlphaRow5e.addEventListener("dragleave", dragLeave2);
+    blackAlphaRow5e.addEventListener("drop", dragDrop2);
+
+    blackAlphaRow4e.addEventListener("dragover", dragOver);
+    blackAlphaRow4e.addEventListener("dragenter", dragEnter);
+    blackAlphaRow4e.addEventListener("dragleave", dragLeave);
+    blackAlphaRow4e.addEventListener("drop", dragDrop);
+
+    blackAlphaRow3e.addEventListener("dragover", dragOver);
+    blackAlphaRow3e.addEventListener("dragenter", dragEnter);
+    blackAlphaRow3e.addEventListener("dragleave", dragLeave);
+    blackAlphaRow3e.addEventListener("drop", dragDrop);
+
+    blackAlphaRow2e.addEventListener("dragover", dragOver);
+    blackAlphaRow2e.addEventListener("dragenter", dragEnter);
+    blackAlphaRow2e.addEventListener("dragleave", dragLeave);
+    blackAlphaRow2e.addEventListener("drop", dragDrop);
+
+    blackAlphaRow1e.addEventListener("dragover", dragOver);
+    blackAlphaRow1e.addEventListener("dragenter", dragEnter);
+    blackAlphaRow1e.addEventListener("dragleave", dragLeave);
+    blackAlphaRow1e.addEventListener("drop", dragDrop);
+
+    //========================================================
+
+    blackAlphaRow8f.addEventListener("dragover", dragOver);
+    blackAlphaRow8f.addEventListener("dragenter", dragEnter);
+    blackAlphaRow8f.addEventListener("dragleave", dragLeave);
+    blackAlphaRow8f.addEventListener("drop", dragDrop);
+
+    blackAlphaRow7f.addEventListener("dragover", dragOver);
+    blackAlphaRow7f.addEventListener("dragenter", dragEnter);
+    blackAlphaRow7f.addEventListener("dragleave", dragLeave);
+    blackAlphaRow7f.addEventListener("drop", dragDrop);
+
+    blackAlphaRow6f.addEventListener("dragover", dragOver6);
+    blackAlphaRow6f.addEventListener("dragenter", dragEnter6);
+    blackAlphaRow6f.addEventListener("dragleave", dragLeave6);
+    blackAlphaRow6f.addEventListener("drop", dragDrop6);
+
+    blackAlphaRow5f.addEventListener("dragover", dragOver);
+    blackAlphaRow5f.addEventListener("dragenter", dragEnter);
+    blackAlphaRow5f.addEventListener("dragleave", dragLeave);
+    blackAlphaRow5f.addEventListener("drop", dragDrop);
+
+    blackAlphaRow4f.addEventListener("dragover", dragOver);
+    blackAlphaRow4f.addEventListener("dragenter", dragEnter);
+    blackAlphaRow4f.addEventListener("dragleave", dragLeave);
+    blackAlphaRow4f.addEventListener("drop", dragDrop);
+
+    blackAlphaRow3f.addEventListener("dragover", dragOver3);
+    blackAlphaRow3f.addEventListener("dragenter", dragEnter3);
+    blackAlphaRow3f.addEventListener("dragleave", dragLeave3);
+    blackAlphaRow3f.addEventListener("drop", dragDrop3);
+
+    blackAlphaRow2f.addEventListener("dragover", dragOver);
+    blackAlphaRow2f.addEventListener("dragenter", dragEnter);
+    blackAlphaRow2f.addEventListener("dragleave", dragLeave);
+    blackAlphaRow2f.addEventListener("drop", dragDrop);
+
+    blackAlphaRow1f.addEventListener("dragover", dragOver8);
+    blackAlphaRow1f.addEventListener("dragenter", dragEnter8);
+    blackAlphaRow1f.addEventListener("dragleave", dragLeave8);
+    blackAlphaRow1f.addEventListener("drop", dragDrop8);
+    //========================================================
+
+    blackAlphaRow8g.addEventListener("dragover", dragOver);
+    blackAlphaRow8g.addEventListener("dragenter", dragEnter);
+    blackAlphaRow8g.addEventListener("dragleave", dragLeave);
+    blackAlphaRow8g.addEventListener("drop", dragDrop);
+
+    blackAlphaRow7g.addEventListener("dragover", dragOver);
+    blackAlphaRow7g.addEventListener("dragenter", dragEnter);
+    blackAlphaRow7g.addEventListener("dragleave", dragLeave);
+    blackAlphaRow7g.addEventListener("drop", dragDrop);
+
+    blackAlphaRow6g.addEventListener("dragover", dragOver);
+    blackAlphaRow6g.addEventListener("dragenter", dragEnter);
+    blackAlphaRow6g.addEventListener("dragleave", dragLeave);
+    blackAlphaRow6g.addEventListener("drop", dragDrop);
+
+    blackAlphaRow5g.addEventListener("dragover", dragOver);
+    blackAlphaRow5g.addEventListener("dragenter", dragEnter);
+    blackAlphaRow5g.addEventListener("dragleave", dragLeave);
+    blackAlphaRow5g.addEventListener("drop", dragDrop);
+
+    blackAlphaRow4g.addEventListener("dragover", dragOver);
+    blackAlphaRow4g.addEventListener("dragenter", dragEnter);
+    blackAlphaRow4g.addEventListener("dragleave", dragLeave);
+    blackAlphaRow4g.addEventListener("drop", dragDrop);
+
+    blackAlphaRow3g.addEventListener("dragover", dragOver);
+    blackAlphaRow3g.addEventListener("dragenter", dragEnter);
+    blackAlphaRow3g.addEventListener("dragleave", dragLeave);
+    blackAlphaRow3g.addEventListener("drop", dragDrop);
+
+    blackAlphaRow2g.addEventListener("dragover", dragOver);
+    blackAlphaRow2g.addEventListener("dragenter", dragEnter);
+    blackAlphaRow2g.addEventListener("dragleave", dragLeave);
+    blackAlphaRow2g.addEventListener("drop", dragDrop);
+
+    blackAlphaRow1g.addEventListener("dragover", dragOver7);
+    blackAlphaRow1g.addEventListener("dragenter", dragEnter7);
+    blackAlphaRow1g.addEventListener("dragleave", dragLeave7);
+    blackAlphaRow1g.addEventListener("drop", dragDrop7);
+    //=======================================================
+
+    blackAlphaRow8h.addEventListener("dragover", dragOver);
+    blackAlphaRow8h.addEventListener("dragenter", dragEnter);
+    blackAlphaRow8h.addEventListener("dragleave", dragLeave);
+    blackAlphaRow8h.addEventListener("drop", dragDrop);
+
+    blackAlphaRow7h.addEventListener("dragover", dragOver);
+    blackAlphaRow7h.addEventListener("dragenter", dragEnter);
+    blackAlphaRow7h.addEventListener("dragleave", dragLeave);
+    blackAlphaRow7h.addEventListener("drop", dragDrop);
+
+    blackAlphaRow6h.addEventListener("dragover", dragOver);
+    blackAlphaRow6h.addEventListener("dragenter", dragEnter);
+    blackAlphaRow6h.addEventListener("dragleave", dragLeave);
+    blackAlphaRow6h.addEventListener("drop", dragDrop);
+
+    blackAlphaRow5h.addEventListener("dragover", dragOver);
+    blackAlphaRow5h.addEventListener("dragenter", dragEnter);
+    blackAlphaRow5h.addEventListener("dragleave", dragLeave);
+    blackAlphaRow5h.addEventListener("drop", dragDrop);
+
+    blackAlphaRow4h.addEventListener("dragover", dragOver);
+    blackAlphaRow4h.addEventListener("dragenter", dragEnter);
+    blackAlphaRow4h.addEventListener("dragleave", dragLeave);
+    blackAlphaRow4h.addEventListener("drop", dragDrop);
+
+    blackAlphaRow3h.addEventListener("dragover", dragOver);
+    blackAlphaRow3h.addEventListener("dragenter", dragEnter);
+    blackAlphaRow3h.addEventListener("dragleave", dragLeave);
+    blackAlphaRow3h.addEventListener("drop", dragDrop);
+
+    blackAlphaRow2h.addEventListener("dragover", dragOver);
+    blackAlphaRow2h.addEventListener("dragenter", dragEnter);
+    blackAlphaRow2h.addEventListener("dragleave", dragLeave);
+    blackAlphaRow2h.addEventListener("drop", dragDrop);
+
+    blackAlphaRow1h.addEventListener("dragover", dragOver);
+    blackAlphaRow1h.addEventListener("dragenter", dragEnter);
+    blackAlphaRow1h.addEventListener("dragleave", dragLeave);
+    blackAlphaRow1h.addEventListener("drop", dragDrop);
+
+    //functions start and end of drag event
+
+
     //}
+    //}
+
+
+
+   
     //+++++++
     //+++++++
 }
 //++++++++
 //+++++++++
-const timer = document.querySelector("#timercount");
-let x = 300
 
-const lessSecond = setInterval(() => {
-    
-x = x -1
-//const timeSeconds =Math.floor((x % (1000 * 60)) / 1000);
 
-if(x == 0){
-    stopTime = () =>{
-    clearInterval(x)
+
+
+
+//====================================================================
+//====================================================================
+
+
+//two clocks to Convert 5 minutes to seconds by multiplying by 60 equals 300 seconds
+
+const startTime = 5;
+let timeDepricate = startTime * 60;
+
+
+//Timer inside function to prevent start until button pressed
+const beginPlay1 = document.querySelector("#play1");
+const timerDisplay1 = document.querySelector("#timercount1");
+beginPlay1.addEventListener("click", startClock1);
+
+function startClock1() {
+
+
+    //subtracting one second based on interval this creates update of const time1minuets and time 1seconds
+    const timeR1 = setInterval(time1Function, 1000);
+    function time1Function() {
+        timeDepricate--;
+        const time1Minutes = Math.floor(timeDepricate / 60);
+        const time1Seconds = timeDepricate % 60;
+        timerDisplay1.innerHTML = time1Minutes + ":" + time1Seconds;
+        console.log(time1Seconds)
+        console.log(time1Minutes)
+
+    }
+
+ //================================================
+ //stop clock 1   
+    const stopOne = document.querySelector("#stop1");
+    stopOne.addEventListener("click", stopTimer1);
+    function stopTimer1() {
+
+        clearInterval(timeR1)
+        console.log("time is up");
+    }
+
+}
+
+const start2Time = 5;
+let time2Depricate = start2Time * 60;
+//Timer inside function to prevent start until button pressed
+const beginPlay2 = document.querySelector("#play2");
+const timerDisplay2 = document.querySelector("#timercount2");
+beginPlay2.addEventListener("click", startClock2);
+//subtracting one second based on interval this creates update of const time1minuets and time 1seconds
+
+function startClock2() {
+
+    const timeR2 = setInterval(time2Function, 1000);
+    function time2Function() {
+        time2Depricate--;
+        const time2Minutes = Math.floor(time2Depricate / 60);
+        const time2Seconds = time2Depricate % 60;
+        timerDisplay2.innerHTML = time2Minutes + ":" + time2Seconds;
+        console.log(time2Seconds);
+        console.log(time2Minutes);
+    }
+ //================================================
+ //stop clock 2  
+    const stopOne2 = document.querySelector("#stop2");
+    stopOne2.addEventListener("click", stopTimer2);
+    function stopTimer2() {
+
+        clearInterval(timeR2)
+        console.log("time is up");
     }
 }
 
 
-timer.innerHTML = x
 
-}, 1000);
+
+
 
 
 

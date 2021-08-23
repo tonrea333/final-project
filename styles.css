@@ -1,10 +1,16 @@
 #masterdiv {
-    background-color: gray;
+    background-color: #461f00 ;
     height: 100%;
 
 }
+#gamepieces {
+    color:blanchedalmond
+}
+#chessheading {
+    color: blanchedalmond
+}
 #StartGame {
-    background-color: blue;
+    background-color: #c8A165;
     border: 5px black;
     border-radius: 7px;
     width: 105px;
@@ -21,7 +27,7 @@
   
 }
 #gameboard * {
-    background-color: blanchedalmond;
+    background-color: #Dcb579;
     
 }
 
@@ -34,343 +40,343 @@
 }
 
 #toprow * {
-    background-color: blanchedalmond;
+    background-color: #Dcb579;
    
 }
 
 
 #gameboard #a1 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #b1 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #c1 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #d1 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #e1 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #f1 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #g1 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #h1 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 
 
 #gameboard #a2{
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #b2{
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #c2{
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #d2{
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #e2{
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #f2{
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #g2 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #h2 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 
 
 #gameboard #a3 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #b3 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #c3 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #d3 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #e3 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #f3 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #g3 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #h3 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 
 
 #gameboard #a4 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #b4 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #c4 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #d4 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #e4 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #f4 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #g4  {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #h4  {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 
 
 #gameboard #a5 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #b5 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #c5 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #d5 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #e5 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #f5 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #g5 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #h5 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 
 
 #gameboard #a6 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #b6 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #c6 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #d6 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #e6 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #f6 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #g6  {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #h6  {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 
 
 #gameboard #a7 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #b7 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #c7 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #d7 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #e7 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #f7 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #g7 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #h7 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 
 
 #gameboard #a8 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #b8 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #c8 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #d8 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #e8 {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #f8 {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #g8  {
-    background-color: blanchedalmond;
-border: 1px solid green;
+    background-color: #Dcb579;
+border: 1px solid #6e470b;
 position: relative;
 }
 #gameboard #h8  {
-    background-color: green;
-border: 1px solid green;
+    background-color: #6e470b;
+border: 1px solid #6e470b;
 position: relative;
 }
 
@@ -380,29 +386,22 @@ position: relative;
     background-color:inherit;
     padding-left: 10px;
     padding-top: 10px;
-    cursor:grab;
-    
+    cursor:grab; 
 }
 #blkPawn7Aimg:active {
 cursor:grabbing;
 }
-.chesspiece {
-    width: 40px;
-    height: 40px;
-    background-color:inherit;
-    padding-left: 10px;
-    padding-top: 10px;
-    position: absolute;
-}
-
 #blkPawn7Bimg {
     width: 40px;
     height: 40px;
     background-color:inherit;
     padding-left: 10px;
-    padding-top: 10px;
-    
+    padding-top: 10px; 
+    cursor:grab;
 }
+#blkPawn7Bimg:active {
+    cursor:grabbing;
+    }
 #blkPawn7Cimg {
     width: 40px;
     height: 40px;
@@ -410,7 +409,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab;
 }
+#blkPawn7Cimg:active {
+    cursor:grabbing;
+    }
 #blkPawn7Dimg {
     width: 40px;
     height: 40px;
@@ -418,7 +421,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab;
 }
+#blkPawn7Dimg:active {
+    cursor:grabbing;
+    }
 #blkPawn7Eimg {
     width: 40px;
     height: 40px;
@@ -426,7 +433,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#blkPawn7Eimg:active {
+    cursor:grabbing;
+    }
 #blkPawn7Fimg {
     width: 40px;
     height: 40px;
@@ -434,7 +445,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#blkPawn7Fimg:active {
+    cursor:grabbing;
+    }
 #blkPawn7Gimg {
     width: 40px;
     height: 40px;
@@ -442,7 +457,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#blkPawn7Gimg:active {
+    cursor:grabbing;
+    }
 #blkPawn7Himg {
     width: 40px;
     height: 40px;
@@ -450,8 +469,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
-
+#blkPawn7Himg:active {
+    cursor:grabbing;
+    }
 
 #whtPawn2Aimg {
     width: 40px;
@@ -460,7 +482,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtPawn2Aimg:active {
+    cursor:grabbing;
+    }
 #whtPawn2Bimg {
     width: 40px;
     height: 40px;
@@ -468,7 +494,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtPawn2Bimg:active {
+    cursor:grabbing;
+    }
 #whtPawn2Cimg {
     width: 40px;
     height: 40px;
@@ -476,7 +506,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtPawn2Cimg:active {
+    cursor:grabbing;
+    }
 #whtPawn2Dimg {
     width: 40px;
     height: 40px;
@@ -484,7 +518,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtPawn2Dimg:active {
+    cursor:grabbing;
+    }
 #whtPawn2Eimg {
     width: 40px;
     height: 40px;
@@ -492,7 +530,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtPawn2Eimg:active {
+    cursor:grabbing;
+    }
 #whtPawn2Fimg {
     width: 40px;
     height: 40px;
@@ -500,7 +542,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtPawn2Fimg:active {
+    cursor:grabbing;
+    }
 #whtPawn2Gimg {
     width: 40px;
     height: 40px;
@@ -508,7 +554,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtPawn2Gimg:active {
+    cursor:grabbing;
+    }
 #whtPawn2Himg {
     width: 40px;
     height: 40px;
@@ -516,8 +566,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
-
+#whtPawn2Himg:active {
+    cursor:grabbing;
+    }
 
 #blkrook8Aimg {
     width: 40px;
@@ -526,7 +579,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#blkrook8Aimg:active {
+    cursor:grabbing;
+    }
 #blkknight8Bimg {
     width: 40px;
     height: 40px;
@@ -534,7 +591,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#blkknight8Bimg:active {
+    cursor:grabbing;
+    }
 #blkbishop8Cimg {
     width: 40px;
     height: 40px;
@@ -542,7 +603,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#blkbishop8Cimg:active {
+    cursor:grabbing;
+    }
 #blkqueen8Dimg {
     width: 40px;
     height: 40px;
@@ -550,7 +615,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#blkqueen8Dimg:active {
+    cursor:grabbing;
+    }
 #blkking8Eimg {
     width: 40px;
     height: 40px;
@@ -558,7 +627,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#blkking8Eimg:active {
+    cursor:grabbing;
+    }
 #blkbishop8Fimg {
     width: 40px;
     height: 40px;
@@ -566,7 +639,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#blkbishop8Fimg:active {
+    cursor:grabbing;
+    }
 #blkknight8Gimg {
     width: 40px;
     height: 40px;
@@ -574,7 +651,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#blkknight8Gimg:active {
+    cursor:grabbing;
+    }
 #blkrook8Himg {
     width: 40px;
     height: 40px;
@@ -582,7 +663,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#blkrook8Himg:active {
+    cursor:grabbing;
+    }
 
 
 #whtrook1Aimg {
@@ -592,7 +677,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtrook1Aimg:active {
+    cursor:grabbing;
+    }
 #whtknight1Bimg {
     width: 40px;
     height: 40px;
@@ -600,7 +689,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtknight1Bimg:active {
+    cursor:grabbing;
+    }
 #whtbishop1Cimg {
     width: 40px;
     height: 40px;
@@ -608,7 +701,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtbishop1Cimg:active {
+    cursor:grabbing;
+    }
 #whtqueen1Dimg {
     width: 40px;
     height: 40px;
@@ -616,7 +713,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtqueen1Dimg:active {
+    cursor:grabbing;
+    }
 #whtking1Eimg {
     width: 40px;
     height: 40px;
@@ -624,7 +725,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtking1Eimg:active {
+    cursor:grabbing;
+    }
 #whtbishop1Fimg {
     width: 40px;
     height: 40px;
@@ -632,7 +737,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtbishop1Fimg:active {
+    cursor:grabbing;
+    }
 #whtknight1Gimg {
     width: 40px;
     height: 40px;
@@ -640,7 +749,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
+    cursor:grab; 
 }
+#whtknight1Gimg:active {
+    cursor:grabbing;
+    }
 #whtrook1Himg {
     width: 40px;
     height: 40px;
@@ -648,8 +761,11 @@ cursor:grabbing;
     padding-left: 10px;
     padding-top: 10px;
     position:absolute;
-    
+    cursor:grab; 
 }
+#whtrook1Himg:active {
+    cursor:grabbing;
+    }
 #x8 {
    display:grid;
    font-size: 17px;
@@ -788,26 +904,74 @@ cursor:grabbing;
     #masterdiv{ 
   background-color: rgb(59, 16, 16);
   font-size:40px;
-  color: blanchedalmond
+  color: #Dcb579
 }
 }
 #clock {
-    display:grid;
-    justify-items: center;
+    display:flex;
+    
+    justify-content: space-evenly;
     padding-top: 25px;
    
 }
 #play1 {
     width:280px;
     height:40px;
-    background-color: cornflowerblue;
+    background-color: #c8A165;
+    border-radius: 25px;
     font-size:20px;
+    margin-top: 25px;
 }
 #play2 {
     width:280px;
     height:40px;
-    background-color: salmon;
+    background-color: #6e470b;
+    border-radius: 25px;
+    font-size:20px;
+    margin-top: 25px;
 }
+
+#timercount1 {
+    color: black;
+    margin-top: 25px;
+    font-size: 60px;
+    border: 2px solid black;
+    background-color: #c8A165;
+    border-radius: 15px;
+    
+}
+#timercount2 {
+    color: black;
+    margin-top: 25px;
+    font-size: 60px;
+    border: 2px solid black;
+    background-color: #6e470b;
+    border-radius: 15px;
+}
+#stopcontrol {
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+   
+}
+
+#stop1 {
+    width:280px;
+    height:40px;
+    background-color: #c8A165;
+    border-radius: 25px;
+    font-size:20px;
+    margin-top: 25px;
+}
+#stop2 {
+    width:280px;
+    height:40px;
+    background-color: #6e470b;;
+    border-radius: 25px;
+    font-size:20px;
+    margin-top: 25px;
+}
+
 
 
 

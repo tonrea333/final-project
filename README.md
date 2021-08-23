@@ -3,8 +3,18 @@ Chess
 This program was created to demonstrate a level of coding proficency as related to term one of Code Immersives.  The student was tasked with choosing a project that 
 would provide at least a weeks worth of coding, troubleshooting, and research at respective coding level.  A number of specified/partially-specified requirement were also included: "Your app has at least three distinct "features"; Your project has at least ten commits in git; Your app is mobile responsive; Your project contains a `README.md` file that explains what your project is and how to use it; Your project is hosted on GitHub pages; Your code is clean; Proper indentation; No unnecessary repetition; Variables as camelCase." (Final Project)
 
-This game allows users to play a 
+Rules of chess game play:
 
+The user/users will need to know the rules of chess to play chess.  This applications does not provide instruction nor does it prevent chess piece movement not in accordance with game rules.  
+
+Chess clock:
+
+The chess clock is manual and the first player must press light color start clock button to activate timer then press light color stop clock to pause their time.  The second player must do the same with the dark color start clock and stop clock tabs.
+
+
+Reset and Storage:
+
+The game does not have a storage option nor does it have a reset button.  In order, to begin a new game player must refresh screen. 
 
 
 

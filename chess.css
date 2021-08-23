@@ -21,3 +21,10 @@ width: 40px;
 .nopiece2 {
     background-color: white;
 }
+.piece {
+    background-image: url("chess-151548_1280.png");
+    background-size: cover;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    }
